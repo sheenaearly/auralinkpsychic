@@ -13,16 +13,11 @@
     <!-- #title -->
     <title>PairUp - PairUp HTML Template</title>
 
-    <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
-    <!-- Your custom JavaScript file -->
-    <script src="assets/js/main.js" defer></script>
+    <!-- Correct Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
 
-    <!-- #favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-    <!-- ==== css dependencies start ==== -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
 <body>
@@ -2010,15 +2005,8 @@
     </footer>
     <!-- Footer Section Ends -->
 
-    <!-- ==== js dependencies start ==== -->
-    <script src="assets/js/plugins/plugins.js"></script>
-    <script src="assets/js/plugins/plugin-custom.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <!-- ==== js dependencies start ==== -->
-    <script src="assets/js/plugins/plugins.js"></script>
-    <script src="assets/js/plugins/plugin-custom.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!--Make sure main.js loads LAST -->
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -8,22 +8,10 @@ const firebaseConfig = {
   measurementId: "G-JFM3TK8BSP"
 };
 
-// Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const analytics = firebase.analytics(app);
+// Fix: Use firebase.initializeApp() instead of "initializeApp"
+firebase.initializeApp(firebaseConfig);
 
-// Check if Firebase is initialized correctly
-console.log("Firebase initialized:", app);
-
-"use strict";
-document.addEventListener("DOMContentLoaded", function () {
-  $(function ($) {
-    // Your existing code...
-  });
-});
-
-// Check if Firebase is initialized correctly
-console.log("Firebase initialized:", app);
+console.log("Firebase initialized successfully!");
 
 
 "use strict";
