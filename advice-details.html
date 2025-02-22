@@ -18,6 +18,51 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/67b977b5e01aea19118bc85b/1ikm7n7o4';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+
+    // Trigger the chat when the "Start Chat" button is clicked
+    document.getElementById("start-chat").addEventListener("click", function () {
+        Tawk_API.toggle();  // This opens the chat window
+    });
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- Start Chat Button -->
+<button id="start-chat">Start Chat</button>
+
+
+<script type="text/javascript">
+    Tawk_API = Tawk_API || {};
+    Tawk_API.onChatStarted = async function () {
+        console.log("Chat started!");
+
+        let user = await auth.currentUser;
+        if (!user) {
+            console.log("No user logged in");
+            return;
+        }
+
+        let sessionRef = await addDoc(collection(db, "sessions"), {
+            user_id: user.uid,
+            start_time: serverTimestamp(),
+            total_minutes: 0
+        });
+
+        localStorage.setItem("chatSessionId", sessionRef.id);
+    };
+</script>
+
 <body>
     <!-- Scroll To Top Start-->
     <button class="scrollToTop d-none d-md-flex d-center" aria-label="scroll Bar Button">
@@ -259,7 +304,7 @@
                                     </div>
                                 </div>
 
-                                 
+
                             </div>
                             <div class="single-item cart-area position-relative">
                                 <div class="cmn-head common_toggles">
