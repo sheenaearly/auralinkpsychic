@@ -9,11 +9,21 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const app = firebase.initializeApp(firebaseConfig);
+const analytics = firebase.analytics(app);
 
 // Check if Firebase is initialized correctly
-console.log("Firebase initialized:", firebase);
+console.log("Firebase initialized:", app);
+
+"use strict";
+document.addEventListener("DOMContentLoaded", function () {
+  $(function ($) {
+    // Your existing code...
+  });
+});
+
+// Check if Firebase is initialized correctly
+console.log("Firebase initialized:", app);
 
 
 "use strict";
