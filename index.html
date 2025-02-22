@@ -2,16 +2,31 @@
 <html lang="en">
 
 <head>
+    <!-- required meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #keywords -->
+    <meta name="keywords" content="boot, Bootstrap, PairUp HTML Template">
+    <!-- #description -->
+    <meta name="description" content="PairUp HTML Template">
+    <!-- #title -->
+    <title>PairUp - PairUp HTML Template</title>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
 
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    <!-- #favicon -->
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+
+</head>
+
+<body>
+    <script>
         const firebaseConfig = {
             apiKey: "AIzaSyADvYOlJZoCcfb2os3mh1AVT2jPZAM2RyI",
             authDomain: "auralinkpsychic.firebaseapp.com",
@@ -25,28 +40,11 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+
+        // Check if Firebase is initialized correctly
+        console.log("Firebase initialized:", firebase);
     </script>
 
-
-    <!-- required meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- #keywords -->
-    <meta name="keywords" content="boot, Bootstrap, PairUp HTML Template">
-    <!-- #description -->
-    <meta name="description" content="PairUp HTML Template">
-    <!-- #title -->
-    <title>PairUp - PairUp HTML Template</title>
-    <!-- #favicon -->
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-    <!-- ==== css dependencies start ==== -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
-
-
-</head>
-
-<body>
     <!-- Scroll To Top Start-->
     <button class="scrollToTop d-none d-md-flex d-center" aria-label="scroll Bar Button"><i
             class="mat-icon fas fa-angle-double-up"></i></button>
