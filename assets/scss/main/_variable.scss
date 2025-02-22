@@ -1,0 +1,73 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.36.0/tabler-icons.min.css');
+
+// default root
+:root {
+	--body-font: 'Space Grotesk', sans-serif;
+	--transition: all 0.5s ease-in-out;
+	--transition2: all 0.3s ease-in-out;
+	--animate-duration: 1s;
+	--animate-delay: 0.5s;
+
+	background: #fff;
+	
+	/* Color styles */
+	--db: 25, 15, 71;
+	--p1: 124, 66, 250;
+	--p2: 255, 255, 255;
+	--p3: 230, 108, 93;
+	--p4: 27, 7, 4;
+	--p5: 110, 28, 17;
+	--p6: 131, 125, 156;
+	--p7: 103, 97, 134;
+	--p8: 253, 126, 80;
+	--p9: 245, 195, 189;
+	--px: #89517D;
+	
+
+	--s1: 124, 66, 250;
+	--s2: 236, 96, 79;
+	--s3: 69, 62, 119;
+	--s4: 247, 189, 182;
+	--s5: 236, 235, 239;
+	--s6: 31, 235, 0;
+	--s7: #E185CD;
+	--s8: #C6C3D1;
+	--s9: #918CA7;
+	
+	--n2x: #0085FF;
+	--n3x: #F3F3F3;
+	--n4x: #F6F5F8;
+	
+	--bg1: 253, 239, 237;
+	--bg2: 242, 236, 255;
+	--bg3: 255, 249, 248;
+	--bg4: 255, 252, 252;
+	--bg5: 250, 227, 224;
+	--bg6: 255, 240, 240;
+	--bgx:#FCF3FA;
+	--bgx2:#F3CDEB;
+	--bgx3:#FEF9F8;
+	--bgx4:#FAFAFB;
+	--bgx5:#F5F5F6;
+	--bgx6:#08846E;
+
+	--b1: rgba(247, 190, 183, 0.29);
+	--b2: #F1F0F9;
+	--b3: #F4A399;
+	--b4: rgba(247, 190, 183, 0.60);
+	--b5: 247, 190, 183;
+	--b6: #EBEBEC;
+	--brt1: #ebebeb;
+
+	--gradient-p1: linear-gradient(90deg, rgba(12, 169, 64, 0.08) 0.68%, rgba(236, 88, 88, 0.08) 100%);
+	--box-shadow-p1: 0px 4px 30px 0px rgba(255, 161, 161, 0.25);
+	--box-shadow-p2: 0px 2px 4px -1px rgba(28, 55, 90, 0.12), 0px 3px 12px -1px rgba(28, 52, 84, 0.13);
+	--box-shadow-p3: 0px 4px 30px 0px rgba(255, 161, 161, 0.25);
+	--box-shadow-p4: 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+	--box-shadow-p5: 0px 4px 28px 0px rgba(255, 204, 204, 0.25);
+	--border-p1: 1px solid rgba(247, 190, 183, 0.29);
+	--border-bgx: 1px solid rgba(197, 192, 230, 0.40);
+
+}

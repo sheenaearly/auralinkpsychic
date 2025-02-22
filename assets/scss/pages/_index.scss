@@ -1,0 +1,1027 @@
+// Hero Section Starts
+.hero_area {
+    &__main {
+        margin: 137px 20px 0 316px;
+
+        @include maxQuery(1399) {
+            padding-top: 60px;
+        }
+
+        @include maxQuery(991) {
+            margin: 0;
+            padding-top: 120px;
+        }
+    }
+
+    &__toptext {
+        color: rgba(var(--s2), 1) !important;
+    }
+
+    input[type="checkbox"] {
+        accent-color: rgba(var(--s2), 1);
+        width: 14px;
+        height: 14px;
+    }
+
+    &__review {
+        &-img {
+            img {
+                margin-left: -13px;
+            }
+        }
+    }
+
+    &__counter {
+        max-width: 87%;
+
+        @include maxQuery(1399) {
+            width: 100%;
+        }
+    }
+
+    &__countdown {
+        &-number {
+            span {
+                font-size: inherit;
+                font-weight: inherit;
+                color: inherit;
+            }
+        }
+    }
+
+    &__thumb {
+        img {
+            animation: previewShapeX 4s linear infinite;
+        }
+    }
+    .nice-select::after {
+        right: -20px;
+    }
+}
+// Hero Section Ends
+// Balancing Work Section Starts
+.balancing_work {
+    background-color: rgba(var(--bg1), 0.30);
+    border: 1px solid rgba(var(--b5), 1);
+    overflow-x: hidden;
+
+    &__item {
+        &-two {
+            a {
+                transition: var(--transition2);
+
+                &:hover {
+                    background-color: rgba(var(--s3), 1);
+                    color: rgba(var(--p2), 1);
+                }
+            }
+        }
+    }
+}
+
+.swiper-slide-active {
+    .balancing_work__item {
+        background-color: rgba(var(--bg1), 1);
+    }
+
+    .active-slidimg {
+        display: block !important;
+
+        @include maxQuery(1199) {
+            display: none !important;
+        }
+    }
+}
+
+.swiper-slide-duplicate-prev {
+    .balancing_work__item {
+        width: 550px;
+    }
+
+    .balancing_work__item-two {
+        a {
+            background-color: #C9B2FD;
+
+            &:hover {
+                background-color: rgba(var(--s3), 1);
+            }
+        }
+    }
+}
+
+.swiper-pagination-bullet {
+    height: 16px;
+    width: 16px;
+
+    background-color: rgb(var(--s2));
+}
+
+// Balancing Work Section Starts
+// Podcast Section Starts
+.stories_podcast {
+    &__relation {
+        background-image: url("../images/long-distance-realtion.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: end;
+
+        &-shape {
+            img {
+                @include maxQuery(1399) {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    &__play {
+        top: 40%;
+        left: 0;
+        margin-left: -80px;
+
+        i {
+            top: 35%;
+            right: 35%;
+        }
+
+        @include maxQuery(400) {
+            top: 35%;
+            left: 23%;
+            margin-left: 0;
+
+            img {
+                width: 80%;
+            }
+
+            i {
+                top: 35%;
+                left: 30%;
+            }
+        }
+    }
+
+    &__more {
+        img {
+            @include maxQuery(575) {
+                width: 100%;
+            }
+        }
+
+        a {
+            i {
+                color: var(--b3);
+            }
+        }
+    }
+
+    .stories_podcast__more {
+        cursor: pointer;
+
+        a i {
+            transition: var(--transition2);
+            display: block;
+        }
+
+        &:hover a i {
+            transform: rotate(45deg);
+            color: rgb(var(--s2));
+        }
+
+        &:hover a h4 {
+            color: rgb(var(--s2));
+        }
+    }
+}
+
+// Podcast Section Ends
+// Latest Articles section  Starts
+.latest_articles {
+    .hv {
+        &:hover {
+            background-color: rgba(var(--s2), 1) !important;
+            color: rgba(var(--p2), 1);
+        }
+    }
+
+    &__coping {
+        &-thumb {
+            span {
+                left: 24px;
+                top: 24px;
+                transition: 0.3s linear;
+            }
+        }
+    }
+
+    &__coping2 {
+        background: rgba(var(--bg1), 0.40);
+        border: 1px solid rgba(var(--b5), 0.50);
+
+        hr {
+            color: var(--b3);
+        }
+    }
+}
+
+// Latest Articles section  Ends
+// Read advice Section Starts
+.advice_month {
+    &__read {
+        background-color: rgba(var(--bg1), 0.40);
+        border: 1px solid rgba(var(--b5), 0.40);
+    }
+
+    &__idcard {
+        max-width: 200px;
+
+        &-thumb {
+            .circle-area {
+                top: -11px;
+                left: -10px;
+            }
+
+            a {
+                bottom: 20px;
+                right: 20px;
+                i {
+                    border: 4px solid rgba(var(--p2), 01);
+                    transition: 0.3s linear;
+                    &:hover {
+                        background-color: rgba(var(--s2), 1);
+                    }
+                }
+            }
+            .just-positioning{
+                left: -5%;
+                bottom: 0;
+            }
+        }
+    }
+
+    // .width-maintain {
+    //     @include maxQuery(1599) {
+    //         width: 40%;
+    //     }
+
+    //     @include maxQuery(1399) {
+    //         width: 100%;
+    //     }
+    // }
+    &__consultant {
+        .top_monthx__pid {
+            width: 89%;
+
+            @include maxQuery(575) {
+                width: 44%;
+            }
+        }
+
+        .top_monthx__shapx {
+            @include maxQuery(991) {
+                top: -7%;
+                left: -3%;
+            }
+
+        }
+
+        .coping_divorce__idcard-thumb a {
+            right: 10%;
+            bottom: 15%;
+        }
+    }
+}
+.advice_month__consultant .coping_divorce__idcard-thumb a{
+    right: 0 !important;
+}
+// Read advice Section Ends
+// Newslatters section starts
+.news_letter {
+    &__content {
+        &-search {
+            background-color: rgba(var(--p2), 1);
+        }
+
+        &-btn {
+            padding: 12px 14px;
+            overflow: hidden;
+
+            @include maxQuery(991) {
+                padding: 12px 16px;
+            }
+
+            @include maxQuery(767) {
+                padding: 8px 12px;
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+// Newslatters section ends
+
+// Index two page Starts here
+// ==============================
+// Hero Section Starts
+.hero_two {
+    padding-top: 220px;
+
+    @include maxQuery(1199) {
+        padding-top: 120px;
+    }
+
+    background-image: url("../images/hero_banner_two.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__cntimges {
+        &-left {
+            top: -15%;
+            left: 8%;
+            animation: previewShapeRounded 4s linear infinite;
+        }
+
+        &-right {
+            top: 0%;
+            right: 2%;
+            animation: previewShapeRounded 4s linear infinite;
+        }
+
+        img {
+            @include maxQuery(1399) {
+                display: none;
+            }
+        }
+    }
+
+    &__search {
+        .nice-select::after {
+            right: -17px !important;
+        }
+
+        .nice-select.open .list {
+            background-color: rgba(var(--p2), 1);
+            padding: 5px;
+            overflow: hidden;
+        }
+    }
+
+    input[type="checkbox"] {
+        accent-color: rgba(var(--s2), 1);
+        width: 14px;
+        height: 14px;
+    }
+
+    &__searchap {
+        width: 75%;
+
+        @include maxQuery(575) {
+            width: 100%;
+        }
+    }
+
+    .nice-select {
+        &::after {
+            height: 9px;
+            width: 9px;
+            right: -20px !important;
+        }
+    }
+
+    .nice-select {
+        .list {
+            width: unset;
+            padding: 5px;
+        }
+    }
+
+    .nice-select.open .list {
+        background: rgba(var(--p2), 1);
+        overflow-x: hidden;
+    }
+
+    &__stories {
+        &-roteted {
+            span {
+                transform: rotate(10deg);
+            }
+        }
+
+
+    }
+}
+
+// Hero Section End
+// Coping Section Starts
+.coping_divorce {
+    &__fitem {
+        background: rgba(var(--bg1), 1);
+
+        &-shape {
+            width: 34%;
+        }
+    }
+
+    &__idcard {
+        &-thumb {
+            &:hover {
+                a {
+                    i {
+                        background-color: rgba(var(--s2), 1);
+                        transform: rotate(45deg) !important;
+                    }
+                }
+            }
+            a {
+                right: 20%;
+                bottom: 0;
+
+                i {
+                    border: 6px solid rgba(var(--p2), 1);
+                    transition: 0.3s linear;
+                    padding: 18px;
+                    color: inherit;
+                }
+
+                &:hover {
+                    i {
+                        color: inherit;
+                    }
+                }
+            }
+
+        }
+
+        &-shape {
+            right: 13%;
+            top: -6%;
+            transition: var(--transition2);
+
+            &:hover {
+                transform: rotate(80deg);
+            }
+        }
+    }
+}
+
+// Coping Section Ends
+// To Categories Home tow Starts
+.categories_two {
+    background-color: rgba(var(--bg1), 0.40);
+
+    &__animation {
+        &-one {
+            top: 2%;
+            left: 39%;
+        }
+
+        &-two {
+            z-index: 2 !important;
+        }
+    }
+
+    &__item {
+        border: 1px solid rgba(var(--bg1), 1);
+        overflow: hidden;
+        transition: var(--transition2);
+        z-index: 3 !important;
+
+        &:hover {
+            border: 1px solid rgba(var(--s4), 1);
+            box-shadow: var(--box-shadow-p3);
+
+            .categories_two__footer-left {
+                transform: translateX(0);
+            }
+
+            .categories_two__footer-right {
+                transform: translateX(5%);
+            }
+        }
+    }
+
+    &__thumb {
+        border: 4px solid rgba(var(--p2), 1);
+        box-shadow: 0px 4px 4px 0px rgba(255, 188, 188, 0.25);
+    }
+
+    &__footer {
+        &-left {
+            transform: translateX(-120%);
+            transition: 0.6s linear;
+        }
+
+        &-right {
+            transform: translateX(-285%);
+            transition: 0.6s linear;
+
+            &:hover {
+                background-color: rgba(var(--s2), 1);
+                transition: 0.6s linear;
+
+                i {
+                    transition: 0.6s linear;
+                    color: rgba(var(--p2), 1);
+                }
+            }
+        }
+    }
+}
+
+// To Categories Home tow Ends 
+// Expert Opinion Starts
+.expart_opinion {
+    background-color: rgba(var(--bg1), 0.40);
+
+    &__item {
+        border: 1px solid rgba(var(--bg1), 1);
+        transition: var(--transition2);
+
+        &:hover {
+            border: 1px solid rgba(var(--s4), 1);
+            box-shadow: var(--box-shadow-p3);
+        }
+
+        &-thumb {
+            span {
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+        &-hr {
+            opacity: 0.1;
+            height: 2px;
+        }
+
+    }
+}
+
+// Expert Opinion Ends
+// Top Consultant Of Month Starts
+.consultant_month {
+    &__item {
+        &-thumb {
+            z-index: 0;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(180deg, rgba(2, 2, 2, 0.00) 0%, #020202 100%);
+                border-radius: 7%;
+                transform: translateY(100%);
+                transition: var(--transition2);
+            }
+        }
+
+        &-content {
+            width: 100%;
+            bottom: 40px;
+            transform: translateY(140%);
+            transition: var(--transition2);
+
+        }
+
+        &:hover {
+            .consultant_month__item-thumb {
+                &::before {
+                    transform: translateY(0);
+
+                }
+            }
+
+            .consultant_month__item-content {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+// Top Consultant Of Month Ends
+// Latest Articles Starts
+.article_latest {
+    overflow: visible !important;
+    background-color: rgba(var(--bg1), 0.40);
+
+    &__item {
+        &-thumb {
+            z-index: 1;
+
+            span {
+                top: 24px;
+                left: 24px;
+                z-index: 1;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 55.68%, #000 114.89%);
+                border-radius: 7%;
+            }
+        }
+
+        &-content {
+            bottom: 0;
+            z-index: 3;
+        }
+
+        &-id {
+            background-color: rgba(var(--p2), 0.37);
+        }
+    }
+
+    &__right {
+        position: sticky;
+        top: 120px;
+        left: 0;
+
+        &-hr {
+            opacity: 0.1;
+        }
+
+        &-tag {
+            border: 1px solid rgba(var(--s5), 1);
+        }
+
+        &-trendy {
+            border: 1px solid rgba(var(--s5), 1);
+        }
+    }
+
+    &__left {
+        &-pagin {
+            .pagination a {
+                color: #6B7280;
+                padding: 8px 16px;
+                font-weight: 500;
+                border-radius: 50%;
+            }
+
+            .pagination {
+                a:hover {
+                    background-color: #E5E7EB;
+                }
+
+                .rond {
+                    padding: 6px 10px;
+                    border: 1px solid #E5E7EB;
+                    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+                }
+            }
+
+            .pagination a.active {
+                background-color: #E5E7EB;
+
+            }
+        }
+    }
+}
+
+// Latest Articles Ends
+// Community Discussion Starts
+.comn_discus {
+    &__item {
+        background: linear-gradient(92deg, #0F092B 1.61%, rgba(15, 9, 43, 0.75) 23.49%, rgba(15, 9, 43, 0.63) 34.23%, rgba(15, 9, 43, 0.00) 62.83%), url("../images/community-disfcussion-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+// Community Discussion Ends
+// Most read advice for thsi week starts
+.read_advice {
+    background-color: rgba(var(--bg1), 0.40);
+
+    &__item {
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: rgba(var(--p2), 1);
+        }
+    }
+}
+
+// Most read advice for thsi week ends
+// Newsletter Section Starts
+.news_letter2 {
+    background-color: rgba(var(--bg1), 0.40);
+}
+
+.extra-bg {
+    background-color: rgba(var(--bg1), 0.40);
+}
+
+// Newsletter Section Ends
+
+// Index Three page Starts here
+// ==============================
+// Hero Section Starts
+.hero_three {
+    background-color: rgba(var(--bg6), 0.54);
+    @include maxQuery(991) {
+        padding-top: 120px;
+    }
+
+    &__thumb {
+        &-animation {
+            img {
+                max-width: unset;
+
+                @include maxQuery(991) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    &__tabright{
+        .tabitem{
+            transform: translateY(0);
+        }
+        .tabitem.active {
+            transform: translateY(0);
+          }
+    }
+    &__content{
+        margin-top: 120px;
+        @include maxQuery(991) {
+            margin-top: 20px;
+        }
+        @include maxQuery(575) {
+            margin-top: 0;
+        }
+    }
+
+    .nice-select {
+        margin-right: 20px;
+        &::after {
+            height: 9px;
+            width: 9px;
+            right: 0px !important;
+        }
+    }
+
+    .nice-select {
+        .list {
+            width: unset;
+            padding: 20px;
+            :hover{
+                margin-left: 5px;
+                color: rgba(var(--s2), 1);
+            }
+        }
+    }
+
+    .nice-select.open .list {
+        background: rgba(var(--p2), 1);
+        overflow-x: hidden;
+    }
+    input, textarea{
+        padding: 12px 10px;
+    }
+}
+// Hero Section Ends
+.nice-select {
+    margin-right: 20px;
+    &::after {
+        height: 9px;
+        width: 9px;
+        right: 0px !important;
+    }
+}
+
+.nice-select {
+    .list {
+        width: unset;
+        padding: 20px;
+        :hover{
+            margin-left: 5px;
+            color: rgba(var(--s2), 1);
+        }
+    }
+}
+
+.nice-select.open .list {
+    background: rgba(var(--p2), 1);
+    overflow-x: hidden;
+}
+// Top Categories Starts
+.categories_three {
+    &__item {
+        border: 1px solid rgba(var(--s4), 1);
+        transition: var(--transition2);
+
+        &:hover {
+            transition: var(--transition2);
+            box-shadow: var(--box-shadow-p3);
+            background-color: rgba(var(--p2), 1);
+        }
+
+        &-round {
+            margin-top: -30px;
+        }
+    }
+}
+// Top Categories Ends
+// Coping Section Starts
+.coping_divorce3 {
+    border: 1px solid rgb(var(--bg5));
+    margin: 0 160px;
+
+    @include maxQuery(1699) {
+        margin: 0 10px;
+    }
+}
+// Coping Section Ends
+// Top Authors Of Month Starts
+.auth_month {
+    background-color: var(--bgx3);
+    &__item {
+        transition: var(--transition2);
+        box-shadow: var(--box-shadow-p5);
+        &:hover {
+            background-color: rgba(var(--p2), 1);
+            .auth_month__item-hs{
+                margin-left: 0 !important;
+            }
+            i {
+                margin-left: 10px;
+                color: rgb(var(--s2));
+            }
+        }
+        &-hs{
+            margin-left: -66px;
+        }
+        &-over {
+            background-color: rgba(var(--p2), 0.76);
+            top: 7%;
+            left: 7%;
+            &:hover {
+                span{
+                    color: rgb(var(--s2));
+                }
+            }
+        }
+        &-round {
+            margin-top: -40px;
+            box-shadow: 0px 4px 18px 0px rgba(255, 204, 180, 0.72);
+            border: 5px solid rgba(var(--p2), 1);
+        }
+    }
+}
+// Top Authors Of Month Ends
+// Latest Articles Starts
+.article_three {
+    overflow: visible !important;
+    background-color: rgba(var(--p2), 1);
+
+    &__tag {
+        background-color: var(--bgx4);
+    }
+
+    &__trendy {
+        background-color: var(--bgx4);
+    }
+
+    &__aside {
+        position: sticky;
+        top: 120px;
+        right: 0;
+    }
+}
+// Latest Articles Ends
+// Top Consultant Of Month Starts
+.top_monthx {
+    background-color: var(--bgx3);
+    .coping_divorce__idcard-thumb {
+        &:hover {
+            a {
+                i {
+                    background-color: rgba(var(--s2), 1);
+                    transform: rotate(45deg) !important;
+                    color: rgb(var(--p2)) !important;
+                }
+            }
+        }
+
+        a {
+            right: 3%;
+            bottom: 20%;
+
+            i {
+                border: 6px solid rgba(var(--p2), 1);
+                transition: 0.3s linear;
+                padding: 18px;
+                color: inherit;
+
+                @include maxQuery(991) {
+                    padding: 10px;
+                }
+            }
+
+            &:hover {
+                i {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    &__pid {
+        @include maxQuery(1399) {
+            width: 88%;
+        }
+
+        @include maxQuery(991) {
+            width: 80%;
+        }
+
+        @include maxQuery(575) {
+            width: 50%;
+        }
+    }
+
+    &__shapx {
+        top: -5%;
+        left: 1%;
+
+        @include maxQuery(991) {
+            top: -6%;
+            left: 5%;
+        }
+
+        @include maxQuery(767) {
+            top: -10%;
+            left: 2%;
+        }
+    }
+
+    &__shaps {
+        margin-bottom: -15px;
+        @include maxQuery(575) {
+            width: 60%;
+            left: 33%;
+        }
+    }
+}
+// Top Consultant Of Month Ends
+// Navigating Love and Family Starts
+.navi_love {
+    &__item {
+        &-thumb {
+            img {
+                animation: previewShapeX 4s linear infinite;
+            }
+        }
+    }
+
+    &__item2 {
+        grid-gap: 50px;
+
+        @include maxQuery(1499) {
+            grid-gap: 10px;
+        }
+    }
+
+    &__item3 {}
+}
+// Navigating Love and Family Ends
+// ost read advice for thsi week starts
+.read_advice3 {
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+      }
+    .read_advice__item{
+        transition: 0.2s linear;
+        &:hover{
+            background-color: rgb(var(--p2));
+        }
+    }
+}
+// ost read advice for thsi week ends
+// Newsletter section starts
+.news_letter3 {
+    @include maxQuery(991) {
+        padding-top: 50px;
+    }
+
+    &__item {
+        img {
+            animation: previewShapeX 4s linear infinite;
+        }
+    }
+}
+// Newsletter section ends
