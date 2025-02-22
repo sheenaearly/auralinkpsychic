@@ -1,19 +1,3 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyADvYOlJZoCcfb2os3mh1AVT2jPZAM2RyI",
-  authDomain: "auralinkpsychic.firebaseapp.com",
-  projectId: "auralinkpsychic",
-  storageBucket: "auralinkpsychic.firebasestorage.app",
-  messagingSenderId: "836374029929",
-  appId: "1:836374029929:web:2d9550b5c7c4ed662824f8",
-  measurementId: "G-JFM3TK8BSP"
-};
-
-// Fix: Use firebase.initializeApp() instead of "initializeApp"
-firebase.initializeApp(firebaseConfig);
-
-console.log("Firebase initialized successfully!");
-
-
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
