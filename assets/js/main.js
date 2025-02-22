@@ -1,3 +1,21 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyADvYOlJZoCcfb2os3mh1AVT2jPZAM2RyI",
+  authDomain: "auralinkpsychic.firebaseapp.com",
+  projectId: "auralinkpsychic",
+  storageBucket: "auralinkpsychic.firebasestorage.app",
+  messagingSenderId: "836374029929",
+  appId: "1:836374029929:web:2d9550b5c7c4ed662824f8",
+  measurementId: "G-JFM3TK8BSP"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+// Check if Firebase is initialized correctly
+console.log("Firebase initialized:", firebase);
+
+
 "use strict";
 document.addEventListener("DOMContentLoaded", function () {
   $(function ($) {
@@ -161,21 +179,21 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".common_area, .common_area2, .common_area3").removeClass("show");
       }
     });
-    
+
     $(".common_toggles").click(function (event) {
       event.stopPropagation();
       $(".common_area").toggleClass("show");
       $(".common_area2").removeClass("show");
       $(".common_area3").removeClass("show");
     });
-    
+
     $(".common_toggles2").click(function (event) {
       event.stopPropagation();
       $(".common_area2").toggleClass("show");
       $(".common_area").removeClass("show");
       $(".common_area3").removeClass("show");
     });
-    
+
     $(".common_toggles3").click(function (event) {
       event.stopPropagation();
       $(".common_area3").toggleClass("show");
@@ -207,12 +225,12 @@ document.addEventListener("DOMContentLoaded", function () {
       $(this).css('background-color', '#EC604F');
       activeElements = $(this);
     });
-    
+
     $('.single-item4 .cmn-head4').on('click', function () {
       $(this).parents('.single-item4').toggleClass('active').find('.content4').slideToggle();
       $(this).parents('.single-item4').siblings().removeClass('active').find('.content4').slideUp();
     });
-    
+
     $('.single-item5 .cmn-head5').on('click', function () {
       $(this).parents('.single-item5').toggleClass('active').find('.content5').slideToggle();
       $(this).parents('.single-item5').siblings().removeClass('active').find('.content5').slideUp();
@@ -223,8 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(document).mouseup(function (e) {
       if (!$menu.is(e.target)
-        && $menu.has(e.target).length === 0) 
-      {
+        && $menu.has(e.target).length === 0) {
         $menu.removeClass('show');
       }
     });
