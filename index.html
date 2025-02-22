@@ -14,8 +14,10 @@
     <title>PairUp - PairUp HTML Template</title>
 
     <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="assets/js/main.js" defer></script>
 
     <!-- #favicon -->
     <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
@@ -26,24 +28,6 @@
 </head>
 
 <body>
-    <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyADvYOlJZoCcfb2os3mh1AVT2jPZAM2RyI",
-            authDomain: "auralinkpsychic.firebaseapp.com",
-            projectId: "auralinkpsychic",
-            storageBucket: "auralinkpsychic.firebasestorage.app",
-            messagingSenderId: "836374029929",
-            appId: "1:836374029929:web:2d9550b5c7c4ed662824f8",
-            measurementId: "G-JFM3TK8BSP"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-
-        // Check if Firebase is initialized correctly
-        console.log("Firebase initialized:", firebase);
-    </script>
 
     <!-- Scroll To Top Start-->
     <button class="scrollToTop d-none d-md-flex d-center" aria-label="scroll Bar Button"><i
